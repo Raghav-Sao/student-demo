@@ -23,7 +23,7 @@ class StudentList extends Component {
           data =>
             filterName === '' ||
             filterName === null ||
-            students[data].name.indexOf(filterName) === 0
+            students[data].name.toLowerCase().indexOf(filterName.toLowerCase()) === 0
         )
       if(sortBy === 'name') {
         keys = keys.sort((a, b) => students[a].name < students[b].name)
