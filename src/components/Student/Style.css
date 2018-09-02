@@ -1,0 +1,30 @@
+.student__details_container {
+  height: 100%;
+  background: white; }
+  .student__details_container .student__details {
+    flex: 0 0 500px;
+    height: 500px;
+    margin: auto;
+    display: flex;
+    flex-direction: column; }
+    @media only screen and (max-width: 767px) {
+      .student__details_container .student__details {
+        flex: 0 0 auto;
+        height: auto; } }
+    .student__details_container .student__details span {
+      height: 30px;
+      padding: 10px;
+      color: #333; }
+    .student__details_container .student__details .bar {
+      fill: steelblue; }
+    .student__details_container .student__details .bar:hover {
+      fill: brown; }
+    .student__details_container .student__details .axis {
+      font: 10px sans-serif; }
+    .student__details_container .student__details .axis path,
+    .student__details_container .student__details .axis line {
+      fill: none;
+      stroke: #000;
+      shape-rendering: crispEdges; }
+    .student__details_container .student__details .x.axis path {
+      display: none; }

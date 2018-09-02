@@ -1,0 +1,13 @@
+.student__cards {
+  justify-content: flex-start;
+  .flex__card {
+    flex: 0 0 33%;
+    height: 100px;
+    @media only screen and(max-width: 1199px) {
+      flex: 0 0 49.5%;
+    }
+    @media only screen and(max-width: 767px) {
+      flex: 0 0 100%;
+    }
+  }
+}

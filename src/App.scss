@@ -1,0 +1,54 @@
+* {
+box-sizing: border-box; }
+html {
+  background: #ddd;
+}
+
+/************************************************* Icon **************************************/
+.icon__button {
+  cursor: pointer;
+}
+
+/************************************************* Flex ***************************************/
+.flex__container {
+  display: flex;
+  flex-wrap: wrap;
+  &.dir__column {
+    flex-direction: column;
+  }
+}
+.flex__card {
+  background-color: #fff;
+  color: rgba(117, 117, 117, 1);
+  border: 1px solid #f1f1f1;
+  border-radius: 2px;
+  padding: 0.01em 16px;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12) !important;
+}
+
+.flex__rest {
+  flex: 1;
+}
+.flex__auto {
+  flex: 0 0 auto;
+}
+.flex__jcenter {
+  justify-content: center;
+}
+.flex__acenter {
+  align-items: center;
+}
+.flex__aright {
+  justify-content: flex-end;
+}
+.flex__space__bw {
+  justify-content: space-between;
+}
+.bg-white {
+  background: white;
+}
+.hidden__mobile {
+  @media only screen and(max-width: 562px) {
+    display: none
+  }
+}

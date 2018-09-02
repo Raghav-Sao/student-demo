@@ -1,0 +1,35 @@
+.header {
+  align-items: center;
+  background: #fff;
+  border: 1px solid #eeeeee;
+  border-radius: 5px;
+  box-shadow: 5px 10px 20px -20px #55acee;
+  color: #757575;
+  height: 50px;
+  padding: 0 10px;
+  position: sticky;
+  top: 0; }
+  .header input {
+    border: none;
+    border-bottom: 1px solid #ccc; }
+    @media only screen and (max-width: 562px) {
+      .header input {
+        width: 100px; } }
+    .header input:focus {
+      outline: none;
+      border-bottom: 1px solid #444; }
+  .header .header__text {
+    margin-left: 10px; }
+  .header .header__right__icons {
+    flex: 1;
+    justify-content: flex-end; }
+    @media only screen and (max-width: 562px) {
+      .header .header__right__icons {
+        flex: auto; } }
+    .header .header__right__icons span {
+      width: 100px;
+      user-select: none; }
+      @media only screen and (max-width: 562px) {
+        .header .header__right__icons span {
+          width: auto;
+          margin-left: 5px; } }

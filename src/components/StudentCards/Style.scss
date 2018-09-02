@@ -1,0 +1,9 @@
+.flex__card {
+  flex: 1;
+  margin: 1px;
+  span {
+    height: 30px;
+    display: flex;
+    padding: 5px;
+  }
+}

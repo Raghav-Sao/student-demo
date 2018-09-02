@@ -1,0 +1,43 @@
+.student__details_container {
+  height: 100%;
+  background: white;
+  .student__details {
+    flex: 0 0 500px;
+    height: 500px;
+    margin: auto;
+    // margin: 100px;
+    @media only screen and(max-width: 767px) {
+      flex: 0 0 auto;
+    height: auto;
+    }
+    display: flex;
+    flex-direction: column;
+    span {
+      height: 30px;
+      padding: 10px;
+      color: #333;
+    }
+    .bar {
+      fill: steelblue;
+    }
+
+    .bar:hover {
+      fill: brown;
+    }
+
+    .axis {
+      font: 10px sans-serif;
+    }
+
+    .axis path,
+    .axis line {
+      fill: none;
+      stroke: #000;
+      shape-rendering: crispEdges;
+    }
+
+    .x.axis path {
+      display: none;
+    }
+  }
+}
