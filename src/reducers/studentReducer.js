@@ -1,11 +1,17 @@
-import { UPDATE_STUDENT_DATA, UPDATE_FILTER_NAME, UPDATE_SORT_BY, TOGGLE_SORT_BY_NAME, TOGGLE_SORT_BY_MARKS} from 'actions/StudentAction'
+import {
+  UPDATE_STUDENT_DATA,
+  UPDATE_FILTER_NAME,
+  UPDATE_SORT_BY,
+  TOGGLE_SORT_BY_NAME,
+  TOGGLE_SORT_BY_MARKS,
+} from 'actions/StudentAction'
 
 const initialState = {
   students: {},
   filterName: '',
   sortBy: null,
   ascName: false,
-  ascMarks: false
+  ascMarks: false,
 }
 
 export default function reducer(state = initialState, action = {}) {
@@ -29,21 +35,21 @@ export default function reducer(state = initialState, action = {}) {
     case UPDATE_SORT_BY: {
       return {
         ...state,
-        sortBy: payload
+        sortBy: payload,
       }
     }
 
     case TOGGLE_SORT_BY_NAME: {
       return {
         ...state,
-        ascName: !state.ascName
+        ascName: !state.ascName,
       }
     }
 
     case TOGGLE_SORT_BY_MARKS: {
       return {
         ...state,
-        ascMarks: !state.ascMarks
+        ascMarks: !state.ascMarks,
       }
     }
 
